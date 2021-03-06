@@ -21421,3 +21421,1196 @@ org.postgresql.util.PSQLException: ERROR: insert or update on table "expense" vi
 06-03-2021 12:49:45 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#11]
 06-03-2021 12:49:45 DEBUG LogicalConnectionManagedImpl:172 - Initiating JDBC connection release from afterTransaction
 06-03-2021 12:50:14 DEBUG DriverManagerConnectionProviderImpl:269 - Connection pool now considered primed; min-size will be maintained
+06-03-2021 12:52:13 DEBUG logging:28 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+06-03-2021 12:52:13 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+06-03-2021 12:52:13 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+06-03-2021 12:52:13 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+06-03-2021 12:52:13 INFO  Version:44 - HHH000412: Hibernate ORM core version 5.4.28.Final
+06-03-2021 12:52:13 DEBUG Environment:199 - HHH000206: hibernate.properties not found
+06-03-2021 12:52:14 DEBUG LocalXmlResourceResolver:63 - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+06-03-2021 12:52:14 DEBUG LocalXmlResourceResolver:91 - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+06-03-2021 12:52:14 DEBUG JaxbCfgProcessor:117 - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+06-03-2021 12:52:14 DEBUG Configuration:722 - Building session factory using internal StandardServiceRegistryBuilder
+06-03-2021 12:52:14 DEBUG ServiceBinding:68 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+06-03-2021 12:52:14 DEBUG Configuration:652 - Building session factory using provided StandardServiceRegistry
+06-03-2021 12:52:14 DEBUG RegionFactoryInitiator:118 - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+06-03-2021 12:52:14 DEBUG RegionFactoryInitiator:49 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+06-03-2021 12:52:14 INFO  Version:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration boolean -> org.hibernate.type.BooleanType@2e653bdb
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration boolean -> org.hibernate.type.BooleanType@2e653bdb
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@2e653bdb
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@6c03917c
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@328ad8b1
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration yes_no -> org.hibernate.type.YesNoType@6d43ae94
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration byte -> org.hibernate.type.ByteType@71b0028a
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration byte -> org.hibernate.type.ByteType@71b0028a
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@71b0028a
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration character -> org.hibernate.type.CharacterType@7f96f1f5
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration char -> org.hibernate.type.CharacterType@7f96f1f5
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@7f96f1f5
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration short -> org.hibernate.type.ShortType@781fe0e6
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration short -> org.hibernate.type.ShortType@781fe0e6
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@781fe0e6
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration integer -> org.hibernate.type.IntegerType@72a096ff
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration int -> org.hibernate.type.IntegerType@72a096ff
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@72a096ff
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration long -> org.hibernate.type.LongType@4f298035
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration long -> org.hibernate.type.LongType@4f298035
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@4f298035
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration float -> org.hibernate.type.FloatType@7d81b1d5
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration float -> org.hibernate.type.FloatType@7d81b1d5
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@7d81b1d5
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration double -> org.hibernate.type.DoubleType@1384d5ed
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration double -> org.hibernate.type.DoubleType@1384d5ed
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1384d5ed
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@49fd4c90
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@49fd4c90
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@47a5250
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@47a5250
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration string -> org.hibernate.type.StringType@d904bfd
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.String -> org.hibernate.type.StringType@d904bfd
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@46f1ac23
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@3f5893b2
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration url -> org.hibernate.type.UrlType@2bcf5877
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@2bcf5877
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration Duration -> org.hibernate.type.DurationType@2e109a29
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@2e109a29
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration Instant -> org.hibernate.type.InstantType@4d1f945
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@4d1f945
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@29ad171a
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@29ad171a
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@50d18b92
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@50d18b92
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@65c92a16
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@65c92a16
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@4cc86110
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@4cc86110
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@11de1860
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@11de1860
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@7934558a
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@7934558a
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration date -> org.hibernate.type.DateType@35bf7779
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@35bf7779
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration time -> org.hibernate.type.TimeType@8a2f752
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@8a2f752
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration timestamp -> org.hibernate.type.TimestampType@6a4591e6
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@6a4591e6
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@6a4591e6
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@29fbf7d9
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration calendar -> org.hibernate.type.CalendarType@249d286d
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@249d286d
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@249d286d
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@235a8bb2
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@189b4f56
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration locale -> org.hibernate.type.LocaleType@4ab23447
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@4ab23447
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration currency -> org.hibernate.type.CurrencyType@424b5ac2
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@424b5ac2
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@6600256
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@6600256
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration class -> org.hibernate.type.ClassType@25d46fcd
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@25d46fcd
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@66d51a4a
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@66d51a4a
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@784fe224
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration binary -> org.hibernate.type.BinaryType@43c120cd
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration byte[] -> org.hibernate.type.BinaryType@43c120cd
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration [B -> org.hibernate.type.BinaryType@43c120cd
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@a29d46e
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@a29d46e
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@a29d46e
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration row_version -> org.hibernate.type.RowVersionType@335bda28
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration image -> org.hibernate.type.ImageType@5e344efa
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration characters -> org.hibernate.type.CharArrayType@daa7bf5
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration char[] -> org.hibernate.type.CharArrayType@daa7bf5
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration [C -> org.hibernate.type.CharArrayType@daa7bf5
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@3fa163e
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@3fa163e
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@3fa163e
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration text -> org.hibernate.type.TextType@4db937f4
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration ntext -> org.hibernate.type.NTextType@791b7235
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration blob -> org.hibernate.type.BlobType@6c472ce8
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@6c472ce8
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@15b7b9e3
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration clob -> org.hibernate.type.ClobType@5b574c73
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@5b574c73
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration nclob -> org.hibernate.type.NClobType@3904ca2a
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@3904ca2a
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@1f3bd5ca
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@69a990b4
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration serializable -> org.hibernate.type.SerializableType@45f5c5da
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration object -> org.hibernate.type.ObjectType@44b4b093
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@44b4b093
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@740c178f
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@159940c1
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@29e549e5
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@54a90833
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@400dcd46
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@1f4d02ce
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@1c64caa3
+06-03-2021 12:52:14 DEBUG BasicTypeRegistry:157 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@10a18c
+06-03-2021 12:52:14 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+06-03-2021 12:52:14 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+06-03-2021 12:52:14 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+06-03-2021 12:52:14 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+06-03-2021 12:52:14 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+06-03-2021 12:52:14 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+06-03-2021 12:52:14 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+06-03-2021 12:52:14 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+06-03-2021 12:52:14 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+06-03-2021 12:52:14 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+06-03-2021 12:52:14 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+06-03-2021 12:52:14 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+06-03-2021 12:52:14 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+06-03-2021 12:52:14 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+06-03-2021 12:52:14 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+06-03-2021 12:52:14 INFO  pooling:115 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://35.193.167.131:5432/expenseReimbursementSystemDB]
+06-03-2021 12:52:14 INFO  pooling:121 - HHH10001001: Connection properties: {password=Sci00100gcp!, user=dhurba}
+06-03-2021 12:52:14 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+06-03-2021 12:52:14 DEBUG DriverManagerConnectionProviderImpl:384 - Initializing Connection pool with 1 Connections
+06-03-2021 12:52:14 INFO  DriverManagerConnectionProviderImpl:259 - HHH000115: Hibernate connection pool size: 20 (min=1)
+06-03-2021 12:52:15 DEBUG JdbcEnvironmentInitiator:72 - Database ->
+       name : PostgreSQL
+    version : 12.5
+      major : 12
+      minor : 5
+06-03-2021 12:52:15 DEBUG JdbcEnvironmentInitiator:83 - Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.2.19
+      major : 42
+      minor : 2
+06-03-2021 12:52:15 DEBUG JdbcEnvironmentInitiator:389 - JDBC version : 4.2
+06-03-2021 12:52:15 INFO  Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.PostgresPlusDialect
+06-03-2021 12:52:15 DEBUG IdentifierHelperBuilder:110 - JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+06-03-2021 12:52:16 DEBUG Namespace:51 - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+06-03-2021 12:52:16 DEBUG BasicTypeRegistry:157 - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@5ccad3b
+06-03-2021 12:52:16 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@5ccad3b
+06-03-2021 12:52:16 DEBUG BasicTypeRegistry:160 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@66d51a4a
+06-03-2021 12:52:16 DEBUG TypeConfiguration$Scope:152 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@24aeb7a3] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@159e1e5b]
+06-03-2021 12:52:16 DEBUG AnnotationBinder:560 - Binding entity from annotated class: dev.ghimire.entities.Expense
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+06-03-2021 12:52:16 DEBUG EntityBinder:430 - Import with entity name Expense
+06-03-2021 12:52:16 DEBUG EntityBinder:873 - Bind entity dev.ghimire.entities.Expense on table expense
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(expense), mappingColumn=expense_id, insertable=true, updatable=true, unique=false}
+06-03-2021 12:52:16 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [dev.ghimire.entities.Expense] is safe
+06-03-2021 12:52:16 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : dev.ghimire.entities.Expense
+06-03-2021 12:52:16 DEBUG PropertyBinder:175 - MetadataSourceProcessor property expenseId with lazy=false
+06-03-2021 12:52:16 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [dev.ghimire.entities.Expense:expenseId]
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:410 - building SimpleValue for expenseId
+06-03-2021 12:52:16 DEBUG PropertyBinder:266 - Building property expenseId
+06-03-2021 12:52:16 DEBUG BinderHelper:643 - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(expense_id)]), expenseId, identity, , ...)
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(expense), mappingColumn=amount, insertable=true, updatable=true, unique=false}
+06-03-2021 12:52:16 DEBUG PropertyBinder:175 - MetadataSourceProcessor property amount with lazy=false
+06-03-2021 12:52:16 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [dev.ghimire.entities.Expense:amount]
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:410 - building SimpleValue for amount
+06-03-2021 12:52:16 DEBUG PropertyBinder:266 - Building property amount
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(expense), mappingColumn=decision_date, insertable=true, updatable=true, unique=false}
+06-03-2021 12:52:16 DEBUG PropertyBinder:175 - MetadataSourceProcessor property decisionDate with lazy=false
+06-03-2021 12:52:16 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [dev.ghimire.entities.Expense:decisionDate]
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:410 - building SimpleValue for decisionDate
+06-03-2021 12:52:16 DEBUG PropertyBinder:266 - Building property decisionDate
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='employee_id', referencedColumn='', mappedBy=''}
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(expense), mappingColumn=employee_id, insertable=true, updatable=true, unique=false}
+06-03-2021 12:52:16 DEBUG PropertyBinder:175 - MetadataSourceProcessor property employeeId with lazy=false
+06-03-2021 12:52:16 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [dev.ghimire.entities.Expense:employeeId]
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:410 - building SimpleValue for employeeId
+06-03-2021 12:52:16 DEBUG PropertyBinder:266 - Building property employeeId
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='manager_id', referencedColumn='', mappedBy=''}
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(expense), mappingColumn=manager_id, insertable=true, updatable=true, unique=false}
+06-03-2021 12:52:16 DEBUG PropertyBinder:175 - MetadataSourceProcessor property managerId with lazy=false
+06-03-2021 12:52:16 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [dev.ghimire.entities.Expense:managerId]
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:410 - building SimpleValue for managerId
+06-03-2021 12:52:16 DEBUG PropertyBinder:266 - Building property managerId
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(expense), mappingColumn=reason, insertable=true, updatable=true, unique=false}
+06-03-2021 12:52:16 DEBUG PropertyBinder:175 - MetadataSourceProcessor property reason with lazy=false
+06-03-2021 12:52:16 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [dev.ghimire.entities.Expense:reason]
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:410 - building SimpleValue for reason
+06-03-2021 12:52:16 DEBUG PropertyBinder:266 - Building property reason
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(expense), mappingColumn=status, insertable=true, updatable=true, unique=false}
+06-03-2021 12:52:16 DEBUG PropertyBinder:175 - MetadataSourceProcessor property status with lazy=false
+06-03-2021 12:52:16 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [dev.ghimire.entities.Expense:status]
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:410 - building SimpleValue for status
+06-03-2021 12:52:16 DEBUG PropertyBinder:266 - Building property status
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(expense), mappingColumn=submitted_date, insertable=true, updatable=true, unique=false}
+06-03-2021 12:52:16 DEBUG PropertyBinder:175 - MetadataSourceProcessor property submittedDate with lazy=false
+06-03-2021 12:52:16 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [dev.ghimire.entities.Expense:submittedDate]
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:410 - building SimpleValue for submittedDate
+06-03-2021 12:52:16 DEBUG PropertyBinder:266 - Building property submittedDate
+06-03-2021 12:52:16 DEBUG AnnotationBinder:560 - Binding entity from annotated class: dev.ghimire.entities.Employee
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+06-03-2021 12:52:16 DEBUG EntityBinder:430 - Import with entity name Employee
+06-03-2021 12:52:16 DEBUG EntityBinder:873 - Bind entity dev.ghimire.entities.Employee on table employee
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(employee), mappingColumn=employee_id, insertable=true, updatable=true, unique=false}
+06-03-2021 12:52:16 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [dev.ghimire.entities.Employee] is safe
+06-03-2021 12:52:16 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : dev.ghimire.entities.Employee
+06-03-2021 12:52:16 DEBUG PropertyBinder:175 - MetadataSourceProcessor property employeeId with lazy=false
+06-03-2021 12:52:16 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [dev.ghimire.entities.Employee:employeeId]
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:410 - building SimpleValue for employeeId
+06-03-2021 12:52:16 DEBUG PropertyBinder:266 - Building property employeeId
+06-03-2021 12:52:16 DEBUG BinderHelper:643 - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(employee_id)]), employeeId, identity, , ...)
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='employeeId'}
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(employee), mappingColumn=expenses, insertable=true, updatable=true, unique=false}
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(employee), mappingColumn=null, insertable=true, updatable=true, unique=false}
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(employee), mappingColumn=element, insertable=true, updatable=true, unique=false}
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(employee), mappingColumn=expenses_KEY, insertable=true, updatable=true, unique=false}
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='expenses_KEY', referencedColumn='null', mappedBy='null'}
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='employeeId'}
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='employeeId'}
+06-03-2021 12:52:16 DEBUG CollectionBinder:449 - Collection role: dev.ghimire.entities.Employee.expenses
+06-03-2021 12:52:16 DEBUG PropertyBinder:266 - Building property expenses
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(employee), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+06-03-2021 12:52:16 DEBUG PropertyBinder:175 - MetadataSourceProcessor property firstName with lazy=false
+06-03-2021 12:52:16 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [dev.ghimire.entities.Employee:firstName]
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:410 - building SimpleValue for firstName
+06-03-2021 12:52:16 DEBUG PropertyBinder:266 - Building property firstName
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(employee), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+06-03-2021 12:52:16 DEBUG PropertyBinder:175 - MetadataSourceProcessor property lastName with lazy=false
+06-03-2021 12:52:16 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [dev.ghimire.entities.Employee:lastName]
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:410 - building SimpleValue for lastName
+06-03-2021 12:52:16 DEBUG PropertyBinder:266 - Building property lastName
+06-03-2021 12:52:16 DEBUG AnnotationBinder:560 - Binding entity from annotated class: dev.ghimire.entities.Manager
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+06-03-2021 12:52:16 DEBUG EntityBinder:430 - Import with entity name Manager
+06-03-2021 12:52:16 DEBUG EntityBinder:873 - Bind entity dev.ghimire.entities.Manager on table manager
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(manager), mappingColumn=manager_id, insertable=true, updatable=true, unique=false}
+06-03-2021 12:52:16 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [dev.ghimire.entities.Manager] is safe
+06-03-2021 12:52:16 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : dev.ghimire.entities.Manager
+06-03-2021 12:52:16 DEBUG PropertyBinder:175 - MetadataSourceProcessor property managerId with lazy=false
+06-03-2021 12:52:16 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [dev.ghimire.entities.Manager:managerId]
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:410 - building SimpleValue for managerId
+06-03-2021 12:52:16 DEBUG PropertyBinder:266 - Building property managerId
+06-03-2021 12:52:16 DEBUG BinderHelper:643 - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(manager_id)]), managerId, identity, , ...)
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='managerId'}
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(manager), mappingColumn=expenses, insertable=true, updatable=true, unique=false}
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(manager), mappingColumn=null, insertable=true, updatable=true, unique=false}
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(manager), mappingColumn=element, insertable=true, updatable=true, unique=false}
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(manager), mappingColumn=expenses_KEY, insertable=true, updatable=true, unique=false}
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='expenses_KEY', referencedColumn='null', mappedBy='null'}
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='managerId'}
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='managerId'}
+06-03-2021 12:52:16 DEBUG CollectionBinder:449 - Collection role: dev.ghimire.entities.Manager.expenses
+06-03-2021 12:52:16 DEBUG PropertyBinder:266 - Building property expenses
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(manager), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+06-03-2021 12:52:16 DEBUG PropertyBinder:175 - MetadataSourceProcessor property firstName with lazy=false
+06-03-2021 12:52:16 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [dev.ghimire.entities.Manager:firstName]
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:410 - building SimpleValue for firstName
+06-03-2021 12:52:16 DEBUG PropertyBinder:266 - Building property firstName
+06-03-2021 12:52:16 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(manager), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+06-03-2021 12:52:16 DEBUG PropertyBinder:175 - MetadataSourceProcessor property lastName with lazy=false
+06-03-2021 12:52:16 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [dev.ghimire.entities.Manager:lastName]
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:410 - building SimpleValue for lastName
+06-03-2021 12:52:16 DEBUG PropertyBinder:266 - Building property lastName
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for expenseId
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for amount
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for decisionDate
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for employeeId
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for managerId
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for reason
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for status
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for submittedDate
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for employeeId
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for firstName
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for lastName
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for managerId
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for firstName
+06-03-2021 12:52:16 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for lastName
+06-03-2021 12:52:16 DEBUG PrimaryKey:35 - Forcing column [expense_id] to be non-null as it is part of the primary key for table [expense]
+06-03-2021 12:52:16 DEBUG PrimaryKey:35 - Forcing column [employee_id] to be non-null as it is part of the primary key for table [employee]
+06-03-2021 12:52:16 DEBUG PrimaryKey:35 - Forcing column [manager_id] to be non-null as it is part of the primary key for table [manager]
+06-03-2021 12:52:16 DEBUG CollectionSecondPass:50 - Second pass for collection: dev.ghimire.entities.Employee.expenses
+06-03-2021 12:52:16 DEBUG CollectionBinder:903 - Binding a OneToMany: dev.ghimire.entities.Employee.expenses through a foreign key
+06-03-2021 12:52:16 DEBUG CollectionBinder:941 - Mapping collection: dev.ghimire.entities.Employee.expenses -> expense
+06-03-2021 12:52:16 DEBUG TableBinder:554 - Retrieving property dev.ghimire.entities.Expense.employeeId
+06-03-2021 12:52:16 DEBUG CollectionSecondPass:67 - Mapped collection key: employee_id, one-to-many: dev.ghimire.entities.Expense
+06-03-2021 12:52:16 DEBUG CollectionSecondPass:50 - Second pass for collection: dev.ghimire.entities.Manager.expenses
+06-03-2021 12:52:16 DEBUG CollectionBinder:903 - Binding a OneToMany: dev.ghimire.entities.Manager.expenses through a foreign key
+06-03-2021 12:52:16 DEBUG CollectionBinder:941 - Mapping collection: dev.ghimire.entities.Manager.expenses -> expense
+06-03-2021 12:52:16 DEBUG TableBinder:554 - Retrieving property dev.ghimire.entities.Expense.managerId
+06-03-2021 12:52:16 DEBUG CollectionSecondPass:67 - Mapped collection key: manager_id, one-to-many: dev.ghimire.entities.Expense
+06-03-2021 12:52:16 DEBUG SessionFactoryImpl:204 - Building session factory
+06-03-2021 12:52:16 DEBUG Settings:68 - SessionFactory name : null
+06-03-2021 12:52:16 DEBUG Settings:69 - Automatic flush during beforeCompletion(): enabled
+06-03-2021 12:52:16 DEBUG Settings:70 - Automatic session close at end of transaction: disabled
+06-03-2021 12:52:16 DEBUG Settings:72 - Statistics: disabled
+06-03-2021 12:52:16 DEBUG Settings:74 - Deleted entity synthetic identifier rollback: disabled
+06-03-2021 12:52:16 DEBUG Settings:75 - Default entity-mode: pojo
+06-03-2021 12:52:16 DEBUG Settings:76 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+06-03-2021 12:52:16 DEBUG Settings:77 - Allow initialization of lazy state outside session : disabled
+06-03-2021 12:52:16 DEBUG Settings:79 - Using BatchFetchStyle : LEGACY
+06-03-2021 12:52:16 DEBUG Settings:80 - Default batch fetch size: -1
+06-03-2021 12:52:16 DEBUG Settings:81 - Maximum outer join fetch depth: null
+06-03-2021 12:52:16 DEBUG Settings:82 - Default null ordering: NONE
+06-03-2021 12:52:16 DEBUG Settings:83 - Order SQL updates by primary key: disabled
+06-03-2021 12:52:16 DEBUG Settings:84 - Order SQL inserts for batching: disabled
+06-03-2021 12:52:16 DEBUG Settings:86 - multi-tenancy strategy : NONE
+06-03-2021 12:52:16 DEBUG Settings:88 - JTA Track by Thread: enabled
+06-03-2021 12:52:16 DEBUG Settings:90 - Query language substitutions: {}
+06-03-2021 12:52:16 DEBUG Settings:91 - Named query checking : enabled
+06-03-2021 12:52:16 DEBUG Settings:93 - Second-level cache: disabled
+06-03-2021 12:52:16 DEBUG Settings:94 - Second-level query cache: disabled
+06-03-2021 12:52:16 DEBUG Settings:95 - Second-level query cache factory: null
+06-03-2021 12:52:16 DEBUG Settings:96 - Second-level cache region prefix: null
+06-03-2021 12:52:16 DEBUG Settings:97 - Optimize second-level cache for minimal puts: disabled
+06-03-2021 12:52:16 DEBUG Settings:98 - Structured second-level cache entries: disabled
+06-03-2021 12:52:16 DEBUG Settings:99 - Second-level cache direct-reference entries: disabled
+06-03-2021 12:52:16 DEBUG Settings:100 - Automatic eviction of collection cache: disabled
+06-03-2021 12:52:16 DEBUG Settings:102 - JDBC batch size: 15
+06-03-2021 12:52:16 DEBUG Settings:103 - JDBC batch updates for versioned data: enabled
+06-03-2021 12:52:16 DEBUG Settings:104 - Scrollable result sets: enabled
+06-03-2021 12:52:16 DEBUG Settings:105 - Wrap result sets: disabled
+06-03-2021 12:52:16 DEBUG Settings:106 - JDBC3 getGeneratedKeys(): enabled
+06-03-2021 12:52:16 DEBUG Settings:107 - JDBC result set fetch size: null
+06-03-2021 12:52:16 DEBUG Settings:108 - Connection release mode: AFTER_TRANSACTION
+06-03-2021 12:52:16 DEBUG Settings:109 - Generate SQL with comments: disabled
+06-03-2021 12:52:16 DEBUG Settings:111 - JPA compliance - query : disabled
+06-03-2021 12:52:16 DEBUG Settings:112 - JPA compliance - closed-handling : disabled
+06-03-2021 12:52:16 DEBUG Settings:113 - JPA compliance - lists : disabled
+06-03-2021 12:52:16 DEBUG Settings:114 - JPA compliance - transactions : disabled
+06-03-2021 12:52:16 DEBUG SessionFactoryImpl:259 - Session factory constructed with filter configurations : {}
+06-03-2021 12:52:16 DEBUG SessionFactoryImpl:260 - Instantiating session factory with properties: {java.specification.version=14, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, hibernate.dialect=org.hibernate.dialect.PostgresPlusDialect, java.class.path=C:\Revature2\GitHubbed\ExpenseReinbursementSystem-Project1-\build\classes\java\main;C:\Revature2\GitHubbed\ExpenseReinbursementSystem-Project1-\build\resources\main;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-simple\1.8.0-beta4\1531950ac50afd70a4d02f10b6aaf6d6a6a7669e\slf4j-simple-1.8.0-beta4.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.hibernate\hibernate-core\5.4.28.Final\c096dbb27f83655ec252165340b532733c58e8fb\hibernate-core-5.4.28.Final.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.postgresql\postgresql\42.2.19\85cb20fe8151b6d90900d5ae5cfe0ad7c3e8f921\postgresql-42.2.19.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\log4j\log4j\1.2.17\5af35056b4d257e4b64b9e8069c0746e8b08629f\log4j-1.2.17.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\io.javalin\javalin\3.13.3\835b785cded58f185aa814d360ff2db09d750010\javalin-3.13.3.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.6\9180733b7df8542621dc12e21e87557e8c99b8cb\gson-2.8.6.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.8.0-beta4\83b0359d847ee053d745be7ec0d8e9e8a44304b4\slf4j-api-1.8.0-beta4.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.hibernate.common\hibernate-commons-annotations\5.1.2.Final\e59ffdbc6ad09eeb33507b39ffcf287679a498c8\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.jboss.logging\jboss-logging\3.4.1.Final\40fd4d696c55793e996d1ff3c475833f836c2498\jboss-logging-3.4.1.Final.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\javax.persistence\javax.persistence-api\2.2\25665ac8c0b62f50e6488173233239120fc52c96\javax.persistence-api-2.2.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.javassist\javassist\3.27.0-GA\f63e6aa899e15eca8fdaa402a79af4c417252213\javassist-3.27.0-GA.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy\1.10.17\7ed0da3ca193fa4c2d1ae0d45b28fa45e63acc6e\byte-buddy-1.10.17.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\antlr\antlr\2.7.7\83cd2cd674a217ade95a4bb83a8a14f351f48bd0\antlr-2.7.7.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.jboss.spec.javax.transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\a8485cab9484dda36e9a8c319e76b5cc18797b58\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.jboss\jandex\2.2.3.Final\d3865101f0666b63586683bd811d754517f331ab\jandex-2.2.3.Final.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\com.fasterxml\classmate\1.5.1\3fe0bed568c62df5e89f4f174c101eab25345b6c\classmate-1.5.1.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.1\dd6dda9da676a54c5b36ca2806ff95ee017d8738\jaxb-runtime-2.3.1.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\javax.xml.bind\jaxb-api\2.3.1\8531ad5ac454cc2deb9d4d32c40c4d7451939b5d\jaxb-api-2.3.1.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\javax.activation\javax.activation-api\1.2.0\85262acf3ca9816f9537ca47d5adeabaead7cb16\javax.activation-api-1.2.0.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.dom4j\dom4j\2.1.3\a75914155a9f5808963170ec20653668a2ffd2fd\dom4j-2.1.3.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.checkerframework\checker-qual\3.5.0\2f50520c8abea66fbd8d26e481d3aef5c673b510\checker-qual-3.5.0.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-webapp\9.4.35.v20201120\5ef2f6ab94093558377199d64fb5e31fadd3b036\jetty-webapp-9.4.35.v20201120.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty.websocket\websocket-server\9.4.35.v20201120\acbe339e01e2067ddf6cf9e61399e1d6b04ccb3c\websocket-server-9.4.35.v20201120.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-servlet\9.4.35.v20201120\3e61bcb471e1bfc545ce866cbbe33c3aedeec9b1\jetty-servlet-9.4.35.v20201120.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-security\9.4.35.v20201120\80dc2f422789c78315de76d289b7a5b36c3232d5\jetty-security-9.4.35.v20201120.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-server\9.4.35.v20201120\513502352fd689d4730b2935421b990ada8cc818\jetty-server-9.4.35.v20201120.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-jdk8\1.3.71\4defc79915cf4f78b49bbc4a8f1e80e87767a5b\kotlin-stdlib-jdk8-1.3.71.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\txw2\2.3.1\a09d2c48d3285f206fafbffe0e50619284e92126\txw2-2.3.1.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\com.sun.istack\istack-commons-runtime\3.0.7\c197c86ceec7318b1284bffb49b54226ca774003\istack-commons-runtime-3.0.7.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.jvnet.staxex\stax-ex\1.8\8cc35f73da321c29973191f2cf143d29d26a1df7\stax-ex-1.8.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\com.sun.xml.fastinfoset\FastInfoset\1.2.15\bb7b7ec0379982b97c62cd17465cb6d9155f68e8\FastInfoset-1.2.15.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty.websocket\websocket-servlet\9.4.35.v20201120\d2d7d8c25a8d2aa2bbdbde127c4547f3229fabdf\websocket-servlet-9.4.35.v20201120.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\javax.servlet\javax.servlet-api\3.1.0\3cd63d075497751784b2fa84be59432f4905bf7c\javax.servlet-api-3.1.0.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty.websocket\websocket-client\9.4.35.v20201120\d2db37ecff246d40c7c9b2c32e2162eab89842ea\websocket-client-9.4.35.v20201120.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-client\9.4.35.v20201120\b80f9c8992e2b96141755cd4e945599b4b65c287\jetty-client-9.4.35.v20201120.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-http\9.4.35.v20201120\45d35131a35a1e76991682174421e8cdf765fb9f\jetty-http-9.4.35.v20201120.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty.websocket\websocket-common\9.4.35.v20201120\ca8ed6439eec7c32c887707fe99d11db846b7a4a\websocket-common-9.4.35.v20201120.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-io\9.4.35.v20201120\eb9460700b99b71ecd82a53697f5ff99f69b9e1c\jetty-io-9.4.35.v20201120.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-xml\9.4.35.v20201120\c5c95f91041b6e0e020ff4027e13d7c39fb1e606\jetty-xml-9.4.35.v20201120.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-jdk7\1.3.71\9180d3aec3f0b2ea6ef0dcf01b464a6e2219e381\kotlin-stdlib-jdk7-1.3.71.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.3.71\898273189ad22779da6bed88ded39b14cb5fd432\kotlin-stdlib-1.3.71.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-util-ajax\9.4.35.v20201120\ebbb43912c6423bedb3458e44aee28eeb4d66f27\jetty-util-ajax-9.4.35.v20201120.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-util\9.4.35.v20201120\ef61b83f9715c3b5355b633d9f01d2834f908ece\jetty-util-9.4.35.v20201120.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty.websocket\websocket-api\9.4.35.v20201120\3a51cac89282c6d523cba9a3e436fbde606a0d8b\websocket-api-9.4.35.v20201120.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-common\1.3.71\e71c3fef58e26affeb03d675e91fd8abdd44aa7b\kotlin-stdlib-common-1.3.71.jar;C:\Users\songs\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\13.0\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\annotations-13.0.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=https://java.oracle.com/, user.timezone=America/New_York, java.vm.specification.version=14, os.name=Windows 10, user.country=US, sun.java.launcher=SUN_STANDARD, sun.boot.library.path=C:\Program Files\Java\jdk-14.0.2\bin, sun.java.command=dev.ghimire.app.App, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\songs, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2020-07-14, java.home=C:\Program Files\Java\jdk-14.0.2, file.separator=\, java.vm.compressedOopsMode=Zero based, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=14.0.2+12-46, user.name=songs, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:postgresql://35.193.167.131:5432/expenseReimbursementSystemDB, file.encoding=windows-1252, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, hibernate.connection.driver_class=org.postgresql.Driver, java.vendor.url.bug=https://bugreport.java.com/bugreport/, jetty.git.hash=bdc54f03a5e0a7e280fab27f55c3c75ee8da89fb, java.io.tmpdir=C:\Users\songs\AppData\Local\Temp\, java.version=14.0.2, user.dir=C:\Revature2\GitHubbed\ExpenseReinbursementSystem-Project1-, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, sun.os.patch.level=, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@5d03fe72, java.library.path=C:\Program Files\Java\jdk-14.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python27\;C:\Python27\Scripts;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Java\jdk-12.0.2\bin\;C:\Program Files (x86)\Brackets\command;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Users\songs\AppData\Local\Microsoft\WindowsApps;C:\Users\songs\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\songs\AppData\Local\GitHubDesktop\bin;C:\Users\songs\AppData\Roaming\npm;C:\Users\songs\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;., java.vendor=Oracle Corporation, java.vm.info=mixed mode, sharing, java.vm.version=14.0.2+12-46, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, java.class.version=58.0}
+06-03-2021 12:52:16 DEBUG JaccIntegrator:80 - Skipping JACC integration as it was not enabled
+06-03-2021 12:52:16 DEBUG SessionFactoryImpl:300 - Instantiated session factory
+06-03-2021 12:52:16 DEBUG TypeConfiguration$Scope:157 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@24aeb7a3] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@4cb88532]
+06-03-2021 12:52:16 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [dev.ghimire.entities.Expense] is safe
+06-03-2021 12:52:16 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : dev.ghimire.entities.Expense
+06-03-2021 12:52:17 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [dev.ghimire.entities.Employee] is safe
+06-03-2021 12:52:17 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : dev.ghimire.entities.Employee
+06-03-2021 12:52:17 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [dev.ghimire.entities.Manager] is safe
+06-03-2021 12:52:17 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : dev.ghimire.entities.Manager
+06-03-2021 12:52:17 DEBUG AbstractCollectionPersister:692 - Static SQL for collection: dev.ghimire.entities.Employee.expenses
+06-03-2021 12:52:17 DEBUG AbstractCollectionPersister:694 -  Row insert: update expense set employee_id=? where expense_id=?
+06-03-2021 12:52:17 DEBUG AbstractCollectionPersister:697 -  Row update: update expense set  where expense_id=?
+06-03-2021 12:52:17 DEBUG AbstractCollectionPersister:700 -  Row delete: update expense set employee_id=null where employee_id=? and expense_id=?
+06-03-2021 12:52:17 DEBUG AbstractCollectionPersister:703 -  One-shot delete: update expense set employee_id=null where employee_id=?
+06-03-2021 12:52:17 DEBUG AbstractCollectionPersister:692 - Static SQL for collection: dev.ghimire.entities.Manager.expenses
+06-03-2021 12:52:17 DEBUG AbstractCollectionPersister:694 -  Row insert: update expense set manager_id=? where expense_id=?
+06-03-2021 12:52:17 DEBUG AbstractCollectionPersister:697 -  Row update: update expense set  where expense_id=?
+06-03-2021 12:52:17 DEBUG AbstractCollectionPersister:700 -  Row delete: update expense set manager_id=null where manager_id=? and expense_id=?
+06-03-2021 12:52:17 DEBUG AbstractCollectionPersister:703 -  One-shot delete: update expense set manager_id=null where manager_id=?
+06-03-2021 12:52:17 DEBUG AbstractEntityPersister:3924 - Static SQL for entity: dev.ghimire.entities.Expense
+06-03-2021 12:52:17 DEBUG AbstractEntityPersister:3929 -  Version select: select expense_id from expense where expense_id =?
+06-03-2021 12:52:17 DEBUG AbstractEntityPersister:3932 -  Snapshot select: select expense_.expense_id, expense_.amount as amount2_1_, expense_.decision_date as decision3_1_, expense_.employee_id as employee4_1_, expense_.manager_id as manager_5_1_, expense_.reason as reason6_1_, expense_.status as status7_1_, expense_.submitted_date as submitte8_1_ from expense expense_ where expense_.expense_id=?
+06-03-2021 12:52:17 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into expense (amount, decision_date, employee_id, manager_id, reason, status, submitted_date, expense_id) values (?, ?, ?, ?, ?, ?, ?, ?)
+06-03-2021 12:52:17 DEBUG AbstractEntityPersister:394 -  Update 0: update expense set amount=?, decision_date=?, employee_id=?, manager_id=?, reason=?, status=?, submitted_date=? where expense_id=?
+06-03-2021 12:52:17 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from expense where expense_id=?
+06-03-2021 12:52:17 DEBUG AbstractEntityPersister:3940 -  Identity insert: insert into expense (amount, decision_date, employee_id, manager_id, reason, status, submitted_date) values (?, ?, ?, ?, ?, ?, ?)
+06-03-2021 12:52:17 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@44ea5439]
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : amount
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : decisionDate
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : employeeId
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : managerId
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : reason
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : status
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : submittedDate
+06-03-2021 12:52:17 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+06-03-2021 12:52:17 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+06-03-2021 12:52:17 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=dev.ghimire.entities.Expense)
+    - Returns
+       - EntityReturnImpl(entity=dev.ghimire.entities.Expense, querySpaceUid=<gen:0>, path=dev.ghimire.entities.Expense)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=dev.ghimire.entities.Expense)
+          - SQL table alias mapping - expense0_
+          - alias suffix - 0_
+          - suffixed key columns - {expense_1_1_0_}
+
+06-03-2021 12:52:17 DEBUG EntityLoader:129 - Static select for entity dev.ghimire.entities.Expense [NONE]: select expense0_.expense_id as expense_1_1_0_, expense0_.amount as amount2_1_0_, expense0_.decision_date as decision3_1_0_, expense0_.employee_id as employee4_1_0_, expense0_.manager_id as manager_5_1_0_, expense0_.reason as reason6_1_0_, expense0_.status as status7_1_0_, expense0_.submitted_date as submitte8_1_0_ from expense expense0_ where expense0_.expense_id=?
+06-03-2021 12:52:17 DEBUG AbstractEntityPersister:3924 - Static SQL for entity: dev.ghimire.entities.Employee
+06-03-2021 12:52:17 DEBUG AbstractEntityPersister:3929 -  Version select: select employee_id from employee where employee_id =?
+06-03-2021 12:52:17 DEBUG AbstractEntityPersister:3932 -  Snapshot select: select employee_.employee_id, employee_.first_name as first_na2_0_, employee_.last_name as last_nam3_0_ from employee employee_ where employee_.employee_id=?
+06-03-2021 12:52:17 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into employee (first_name, last_name, employee_id) values (?, ?, ?)
+06-03-2021 12:52:17 DEBUG AbstractEntityPersister:394 -  Update 0: update employee set first_name=?, last_name=? where employee_id=?
+06-03-2021 12:52:17 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from employee where employee_id=?
+06-03-2021 12:52:17 DEBUG AbstractEntityPersister:3940 -  Identity insert: insert into employee (first_name, last_name) values (?, ?)
+06-03-2021 12:52:17 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@717c3756]
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : expenses
+06-03-2021 12:52:17 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@415c16a5]
+06-03-2021 12:52:17 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@63e5cee3]
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : firstName
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : lastName
+06-03-2021 12:52:17 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+06-03-2021 12:52:17 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+06-03-2021 12:52:17 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=dev.ghimire.entities.Employee)
+    - Returns
+       - EntityReturnImpl(entity=dev.ghimire.entities.Employee, querySpaceUid=<gen:0>, path=dev.ghimire.entities.Employee)
+          - CollectionAttributeFetchImpl(collection=dev.ghimire.entities.Employee.expenses, querySpaceUid=<gen:1>, path=dev.ghimire.entities.Employee.expenses)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=dev.ghimire.entities.Expense, querySpaceUid=<gen:2>, path=dev.ghimire.entities.Employee.expenses.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=dev.ghimire.entities.Employee)
+          - SQL table alias mapping - employee0_
+          - alias suffix - 0_
+          - suffixed key columns - {employee1_0_0_}
+
+06-03-2021 12:52:17 DEBUG EntityLoader:129 - Static select for entity dev.ghimire.entities.Employee [NONE]: select employee0_.employee_id as employee1_0_0_, employee0_.first_name as first_na2_0_0_, employee0_.last_name as last_nam3_0_0_ from employee employee0_ where employee0_.employee_id=?
+06-03-2021 12:52:17 DEBUG AbstractEntityPersister:3924 - Static SQL for entity: dev.ghimire.entities.Manager
+06-03-2021 12:52:17 DEBUG AbstractEntityPersister:3929 -  Version select: select manager_id from manager where manager_id =?
+06-03-2021 12:52:17 DEBUG AbstractEntityPersister:3932 -  Snapshot select: select manager_.manager_id, manager_.first_name as first_na2_2_, manager_.last_name as last_nam3_2_ from manager manager_ where manager_.manager_id=?
+06-03-2021 12:52:17 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into manager (first_name, last_name, manager_id) values (?, ?, ?)
+06-03-2021 12:52:17 DEBUG AbstractEntityPersister:394 -  Update 0: update manager set first_name=?, last_name=? where manager_id=?
+06-03-2021 12:52:17 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from manager where manager_id=?
+06-03-2021 12:52:17 DEBUG AbstractEntityPersister:3940 -  Identity insert: insert into manager (first_name, last_name) values (?, ?)
+06-03-2021 12:52:17 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@332a29a]
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : expenses
+06-03-2021 12:52:17 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@625f5a67]
+06-03-2021 12:52:17 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@467568be]
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : firstName
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : lastName
+06-03-2021 12:52:17 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+06-03-2021 12:52:17 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+06-03-2021 12:52:17 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=dev.ghimire.entities.Manager)
+    - Returns
+       - EntityReturnImpl(entity=dev.ghimire.entities.Manager, querySpaceUid=<gen:0>, path=dev.ghimire.entities.Manager)
+          - CollectionAttributeFetchImpl(collection=dev.ghimire.entities.Manager.expenses, querySpaceUid=<gen:1>, path=dev.ghimire.entities.Manager.expenses)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=dev.ghimire.entities.Expense, querySpaceUid=<gen:2>, path=dev.ghimire.entities.Manager.expenses.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=dev.ghimire.entities.Manager)
+          - SQL table alias mapping - manager0_
+          - alias suffix - 0_
+          - suffixed key columns - {manager_1_2_0_}
+
+06-03-2021 12:52:17 DEBUG EntityLoader:129 - Static select for entity dev.ghimire.entities.Manager [NONE]: select manager0_.manager_id as manager_1_2_0_, manager0_.first_name as first_na2_2_0_, manager0_.last_name as last_nam3_2_0_ from manager manager0_ where manager0_.manager_id=?
+06-03-2021 12:52:17 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@27f37642]
+06-03-2021 12:52:17 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4fbb30e0]
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : amount
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : decisionDate
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : employeeId
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : managerId
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : reason
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : status
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : submittedDate
+06-03-2021 12:52:17 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+06-03-2021 12:52:17 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+06-03-2021 12:52:17 DEBUG LoadPlanTreePrinter:55 - LoadPlan(collection=dev.ghimire.entities.Employee.expenses)
+    - Returns
+       - CollectionReturnImpl(collection=dev.ghimire.entities.Employee.expenses, querySpaceUid=<gen:0>, path=[dev.ghimire.entities.Employee.expenses])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=dev.ghimire.entities.Expense, querySpaceUid=<gen:1>, path=[dev.ghimire.entities.Employee.expenses].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=dev.ghimire.entities.Employee.expenses)
+          - SQL table alias mapping - expenses0_
+          - alias suffix - 0_
+          - suffixed key columns - {employee4_1_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - expense_1_1_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=dev.ghimire.entities.Expense)
+                - SQL table alias mapping - expenses0_
+                - alias suffix - 1_
+                - suffixed key columns - {expense_1_1_1_}
+
+06-03-2021 12:52:17 DEBUG CollectionLoader:83 - Static select for collection dev.ghimire.entities.Employee.expenses: select expenses0_.employee_id as employee4_1_0_, expenses0_.expense_id as expense_1_1_0_, expenses0_.expense_id as expense_1_1_1_, expenses0_.amount as amount2_1_1_, expenses0_.decision_date as decision3_1_1_, expenses0_.employee_id as employee4_1_1_, expenses0_.manager_id as manager_5_1_1_, expenses0_.reason as reason6_1_1_, expenses0_.status as status7_1_1_, expenses0_.submitted_date as submitte8_1_1_ from expense expenses0_ where expenses0_.employee_id=?
+06-03-2021 12:52:17 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@274384fb]
+06-03-2021 12:52:17 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3475670c]
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : amount
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : decisionDate
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : employeeId
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : managerId
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : reason
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : status
+06-03-2021 12:52:17 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : submittedDate
+06-03-2021 12:52:17 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+06-03-2021 12:52:17 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+06-03-2021 12:52:17 DEBUG LoadPlanTreePrinter:55 - LoadPlan(collection=dev.ghimire.entities.Manager.expenses)
+    - Returns
+       - CollectionReturnImpl(collection=dev.ghimire.entities.Manager.expenses, querySpaceUid=<gen:0>, path=[dev.ghimire.entities.Manager.expenses])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=dev.ghimire.entities.Expense, querySpaceUid=<gen:1>, path=[dev.ghimire.entities.Manager.expenses].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=dev.ghimire.entities.Manager.expenses)
+          - SQL table alias mapping - expenses0_
+          - alias suffix - 0_
+          - suffixed key columns - {manager_5_1_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - expense_1_1_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=dev.ghimire.entities.Expense)
+                - SQL table alias mapping - expenses0_
+                - alias suffix - 1_
+                - suffixed key columns - {expense_1_1_1_}
+
+06-03-2021 12:52:17 DEBUG CollectionLoader:83 - Static select for collection dev.ghimire.entities.Manager.expenses: select expenses0_.manager_id as manager_5_1_0_, expenses0_.expense_id as expense_1_1_0_, expenses0_.expense_id as expense_1_1_1_, expenses0_.amount as amount2_1_1_, expenses0_.decision_date as decision3_1_1_, expenses0_.employee_id as employee4_1_1_, expenses0_.manager_id as manager_5_1_1_, expenses0_.reason as reason6_1_1_, expenses0_.status as status7_1_1_, expenses0_.submitted_date as submitte8_1_1_ from expense expenses0_ where expenses0_.manager_id=?
+06-03-2021 12:52:17 DEBUG SchemaManagementToolCoordinator:57 - No actions specified; doing nothing
+06-03-2021 12:52:17 DEBUG JtaPlatformInitiator:43 - No JtaPlatform was specified, checking resolver
+06-03-2021 12:52:17 DEBUG JtaPlatformResolverInitiator:33 - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+06-03-2021 12:52:17 DEBUG StandardJtaPlatformResolver:137 - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06-03-2021 12:52:17 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06-03-2021 12:52:17 DEBUG NamedQueryRepository:153 - Checking 0 named HQL queries
+06-03-2021 12:52:17 DEBUG NamedQueryRepository:167 - Checking 0 named SQL queries
+06-03-2021 12:52:17 DEBUG SessionFactoryRegistry:51 - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@213bb6a3
+06-03-2021 12:52:17 DEBUG SessionFactoryRegistry:73 - Registering SessionFactory: d4b1a1a0-9e46-4b1b-9a1c-761f90265a41 (<unnamed>)
+06-03-2021 12:52:17 DEBUG SessionFactoryRegistry:80 - Not binding SessionFactory to JNDI, no JNDI name configured
+06-03-2021 12:52:17 DEBUG StatisticsInitiator:101 - Statistics initialized [enabled=false]
+06-03-2021 12:52:17 WARN  deprecation:1792 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+06-03-2021 12:52:17 DEBUG SQL:144 - select this_.expense_id as expense_1_1_0_, this_.amount as amount2_1_0_, this_.decision_date as decision3_1_0_, this_.employee_id as employee4_1_0_, this_.manager_id as manager_5_1_0_, this_.reason as reason6_1_0_, this_.status as status7_1_0_, this_.submitted_date as submitte8_1_0_ from expense this_
+06-03-2021 12:52:17 DEBUG Loader:384 - Result set row: 0
+06-03-2021 12:52:17 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#3]
+06-03-2021 12:52:17 DEBUG Loader:384 - Result set row: 1
+06-03-2021 12:52:17 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#5]
+06-03-2021 12:52:17 DEBUG Loader:384 - Result set row: 2
+06-03-2021 12:52:17 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#7]
+06-03-2021 12:52:17 DEBUG Loader:384 - Result set row: 3
+06-03-2021 12:52:17 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#9]
+06-03-2021 12:52:17 DEBUG Loader:384 - Result set row: 4
+06-03-2021 12:52:17 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#15]
+06-03-2021 12:52:17 DEBUG Loader:384 - Result set row: 5
+06-03-2021 12:52:17 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#16]
+06-03-2021 12:52:17 DEBUG Loader:384 - Result set row: 6
+06-03-2021 12:52:17 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#18]
+06-03-2021 12:52:17 DEBUG Loader:384 - Result set row: 7
+06-03-2021 12:52:17 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#20]
+06-03-2021 12:52:17 DEBUG Loader:384 - Result set row: 8
+06-03-2021 12:52:17 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#11]
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#3]
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 250.0
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 0
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = certification
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = approved
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1614873213125
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#3]
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#5]
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 500.0
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 1614913632864
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = food
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = pending
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1614913632054
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#5]
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#7]
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 250.0
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 0
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = certification
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = approved
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1614913647934
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#7]
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#9]
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 500.0
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 1615005102531
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = food
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = pending
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1615005101929
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#9]
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#15]
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 200.0
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 1615013039850
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 2
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = football shoes
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = approved
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1615012098597
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#15]
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#16]
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 500.0
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 1615046461818
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = food
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = pending
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1615046457124
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#16]
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#18]
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 250.0
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 0
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = certification
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = approved
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1615046483101
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#18]
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#20]
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 1200.0
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 0
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = accomodation
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = pending
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1615046593497
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#20]
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#11]
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 222.0
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 1615047288296
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 2
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = football shoes
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = approved
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1615012098597
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:52:17 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#11]
+06-03-2021 12:52:17 DEBUG LogicalConnectionManagedImpl:172 - Initiating JDBC connection release from afterTransaction
+06-03-2021 12:52:45 DEBUG DriverManagerConnectionProviderImpl:269 - Connection pool now considered primed; min-size will be maintained
+06-03-2021 12:53:18 DEBUG SQL:144 - select employee0_.employee_id as employee1_0_0_, employee0_.first_name as first_na2_0_0_, employee0_.last_name as last_nam3_0_0_ from employee employee0_ where employee0_.employee_id=?
+06-03-2021 12:53:18 DEBUG EntityReferenceInitializerImpl:131 - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+06-03-2021 12:53:18 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Employee#5]
+06-03-2021 12:53:18 DEBUG TwoPhaseLoad:211 - Processing attribute `expenses` : value = NOT NULL COLLECTION
+06-03-2021 12:53:18 DEBUG TwoPhaseLoad:242 - Attribute (`expenses`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:18 DEBUG TwoPhaseLoad:211 - Processing attribute `firstName` : value = Sergio
+06-03-2021 12:53:18 DEBUG TwoPhaseLoad:242 - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:18 DEBUG TwoPhaseLoad:211 - Processing attribute `lastName` : value = Busquet
+06-03-2021 12:53:18 DEBUG TwoPhaseLoad:242 - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:18 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Employee#5]
+06-03-2021 12:53:18 DEBUG AbstractLoadPlanBasedEntityLoader:307 - Done entity load : dev.ghimire.entities.Employee#5
+06-03-2021 12:53:18 DEBUG LogicalConnectionManagedImpl:172 - Initiating JDBC connection release from afterTransaction
+06-03-2021 12:53:19 WARN  deprecation:1792 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+06-03-2021 12:53:19 DEBUG SQL:144 - select this_.expense_id as expense_1_1_0_, this_.amount as amount2_1_0_, this_.decision_date as decision3_1_0_, this_.employee_id as employee4_1_0_, this_.manager_id as manager_5_1_0_, this_.reason as reason6_1_0_, this_.status as status7_1_0_, this_.submitted_date as submitte8_1_0_ from expense this_
+06-03-2021 12:53:19 DEBUG Loader:384 - Result set row: 0
+06-03-2021 12:53:19 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#3]
+06-03-2021 12:53:19 DEBUG Loader:384 - Result set row: 1
+06-03-2021 12:53:19 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#5]
+06-03-2021 12:53:19 DEBUG Loader:384 - Result set row: 2
+06-03-2021 12:53:19 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#7]
+06-03-2021 12:53:19 DEBUG Loader:384 - Result set row: 3
+06-03-2021 12:53:19 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#9]
+06-03-2021 12:53:19 DEBUG Loader:384 - Result set row: 4
+06-03-2021 12:53:19 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#15]
+06-03-2021 12:53:19 DEBUG Loader:384 - Result set row: 5
+06-03-2021 12:53:19 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#16]
+06-03-2021 12:53:19 DEBUG Loader:384 - Result set row: 6
+06-03-2021 12:53:19 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#18]
+06-03-2021 12:53:19 DEBUG Loader:384 - Result set row: 7
+06-03-2021 12:53:19 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#20]
+06-03-2021 12:53:19 DEBUG Loader:384 - Result set row: 8
+06-03-2021 12:53:19 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#11]
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#3]
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 250.0
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 0
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = certification
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = approved
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1614873213125
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#3]
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#5]
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 500.0
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 1614913632864
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = food
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = pending
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1614913632054
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#5]
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#7]
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 250.0
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 0
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = certification
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = approved
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1614913647934
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#7]
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#9]
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 500.0
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 1615005102531
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = food
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = pending
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1615005101929
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#9]
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#15]
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 200.0
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 1615013039850
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 2
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = football shoes
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = approved
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1615012098597
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#15]
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#16]
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 500.0
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 1615046461818
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = food
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = pending
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1615046457124
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#16]
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#18]
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 250.0
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 0
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = certification
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = approved
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1615046483101
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#18]
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#20]
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 1200.0
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 0
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = accomodation
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = pending
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1615046593497
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#20]
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#11]
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 222.0
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 1615047288296
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 2
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = football shoes
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = approved
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1615012098597
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:53:19 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#11]
+06-03-2021 12:53:19 DEBUG LogicalConnectionManagedImpl:172 - Initiating JDBC connection release from afterTransaction
+06-03-2021 12:53:29 DEBUG SQL:144 - select employee0_.employee_id as employee1_0_0_, employee0_.first_name as first_na2_0_0_, employee0_.last_name as last_nam3_0_0_ from employee employee0_ where employee0_.employee_id=?
+06-03-2021 12:53:29 DEBUG AbstractLoadPlanBasedEntityLoader:307 - Done entity load : dev.ghimire.entities.Employee#10
+06-03-2021 12:53:29 DEBUG LogicalConnectionManagedImpl:172 - Initiating JDBC connection release from afterTransaction
+06-03-2021 12:54:41 WARN  deprecation:1792 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+06-03-2021 12:54:41 DEBUG SQL:144 - select this_.expense_id as expense_1_1_0_, this_.amount as amount2_1_0_, this_.decision_date as decision3_1_0_, this_.employee_id as employee4_1_0_, this_.manager_id as manager_5_1_0_, this_.reason as reason6_1_0_, this_.status as status7_1_0_, this_.submitted_date as submitte8_1_0_ from expense this_
+06-03-2021 12:54:41 DEBUG Loader:384 - Result set row: 0
+06-03-2021 12:54:41 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#3]
+06-03-2021 12:54:41 DEBUG Loader:384 - Result set row: 1
+06-03-2021 12:54:41 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#5]
+06-03-2021 12:54:41 DEBUG Loader:384 - Result set row: 2
+06-03-2021 12:54:41 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#7]
+06-03-2021 12:54:41 DEBUG Loader:384 - Result set row: 3
+06-03-2021 12:54:41 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#9]
+06-03-2021 12:54:41 DEBUG Loader:384 - Result set row: 4
+06-03-2021 12:54:41 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#15]
+06-03-2021 12:54:41 DEBUG Loader:384 - Result set row: 5
+06-03-2021 12:54:41 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#16]
+06-03-2021 12:54:41 DEBUG Loader:384 - Result set row: 6
+06-03-2021 12:54:41 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#18]
+06-03-2021 12:54:41 DEBUG Loader:384 - Result set row: 7
+06-03-2021 12:54:41 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#20]
+06-03-2021 12:54:41 DEBUG Loader:384 - Result set row: 8
+06-03-2021 12:54:41 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#11]
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#3]
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 250.0
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 0
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = certification
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = approved
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1614873213125
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#3]
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#5]
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 500.0
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 1614913632864
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = food
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = pending
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1614913632054
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#5]
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#7]
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 250.0
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 0
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = certification
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = approved
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1614913647934
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#7]
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#9]
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 500.0
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 1615005102531
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = food
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = pending
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1615005101929
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#9]
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#15]
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 200.0
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 1615013039850
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 2
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = football shoes
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = approved
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1615012098597
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#15]
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#16]
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 500.0
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 1615046461818
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = food
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = pending
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1615046457124
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#16]
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#18]
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 250.0
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 0
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = certification
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = approved
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1615046483101
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#18]
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#20]
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 1200.0
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 0
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = accomodation
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = pending
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1615046593497
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#20]
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#11]
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 222.0
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 1615047288296
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 2
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = football shoes
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = approved
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1615012098597
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:54:41 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#11]
+06-03-2021 12:54:41 DEBUG LogicalConnectionManagedImpl:172 - Initiating JDBC connection release from afterTransaction
+06-03-2021 12:55:51 WARN  deprecation:1792 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+06-03-2021 12:55:51 DEBUG SQL:144 - select this_.expense_id as expense_1_1_0_, this_.amount as amount2_1_0_, this_.decision_date as decision3_1_0_, this_.employee_id as employee4_1_0_, this_.manager_id as manager_5_1_0_, this_.reason as reason6_1_0_, this_.status as status7_1_0_, this_.submitted_date as submitte8_1_0_ from expense this_
+06-03-2021 12:55:51 DEBUG Loader:384 - Result set row: 0
+06-03-2021 12:55:51 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#3]
+06-03-2021 12:55:51 DEBUG Loader:384 - Result set row: 1
+06-03-2021 12:55:51 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#5]
+06-03-2021 12:55:51 DEBUG Loader:384 - Result set row: 2
+06-03-2021 12:55:51 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#7]
+06-03-2021 12:55:51 DEBUG Loader:384 - Result set row: 3
+06-03-2021 12:55:51 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#9]
+06-03-2021 12:55:51 DEBUG Loader:384 - Result set row: 4
+06-03-2021 12:55:51 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#15]
+06-03-2021 12:55:51 DEBUG Loader:384 - Result set row: 5
+06-03-2021 12:55:51 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#16]
+06-03-2021 12:55:51 DEBUG Loader:384 - Result set row: 6
+06-03-2021 12:55:51 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#18]
+06-03-2021 12:55:51 DEBUG Loader:384 - Result set row: 7
+06-03-2021 12:55:51 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#20]
+06-03-2021 12:55:51 DEBUG Loader:384 - Result set row: 8
+06-03-2021 12:55:51 DEBUG Loader:1593 - Result row: EntityKey[dev.ghimire.entities.Expense#11]
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#3]
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 250.0
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 0
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = certification
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = approved
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1614873213125
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#3]
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#5]
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 500.0
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 1614913632864
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = food
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = pending
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1614913632054
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#5]
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#7]
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 250.0
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 0
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = certification
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = approved
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1614913647934
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#7]
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#9]
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 500.0
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 1615005102531
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = food
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = pending
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1615005101929
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#9]
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#15]
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 200.0
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 1615013039850
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 2
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = football shoes
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = approved
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1615012098597
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#15]
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#16]
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 500.0
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 1615046461818
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = food
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = pending
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1615046457124
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#16]
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#18]
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 250.0
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 0
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = certification
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = approved
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1615046483101
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#18]
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#20]
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 1200.0
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 0
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 1
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = accomodation
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = pending
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1615046593497
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#20]
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:198 - Resolving attributes for [dev.ghimire.entities.Expense#11]
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `amount` : value = 222.0
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`amount`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `decisionDate` : value = 1615047288296
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`decisionDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `employeeId` : value = 1
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`employeeId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `managerId` : value = 2
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`managerId`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `reason` : value = football shoes
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`reason`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `status` : value = approved
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`status`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:211 - Processing attribute `submittedDate` : value = 1615012098597
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:242 - Attribute (`submittedDate`)  - enhanced for lazy-loading? - false
+06-03-2021 12:55:51 DEBUG TwoPhaseLoad:381 - Done materializing entity [dev.ghimire.entities.Expense#11]
+06-03-2021 12:55:51 DEBUG LogicalConnectionManagedImpl:172 - Initiating JDBC connection release from afterTransaction

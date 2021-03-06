@@ -8,8 +8,8 @@
         <property name="hibernate.connection.url">jdbc:postgresql://35.193.167.131:5432/expenseReimbursementSystemDB</property>
         <property name="hibernate.dialect">org.hibernate.dialect.PostgresPlusDialect</property>
         
-		<property name="hibernate.connection.username">dhurba</property>
-        <property name="hibernate.connection.password">Sci00100gcp!</property>
+		<property name="hibernate.connection.username">......</property>
+        <property name="hibernate.connection.password">..........</property>
         
       <!-- <property name="hibernate.hbm2ddl.auto">create-drop</property>  -->   
          <!-- create drop mode will automatically drop and recreate your tables whenever you create a sessionFactory
@@ -17,6 +17,7 @@
         <property name="hibernate.show_sql">true</property>
         <mapping class="dev.ghimire.entities.Expense"></mapping>
         <mapping class="dev.ghimire.entities.Employee"></mapping>
+        <mapping class="dev.ghimire.entities.Manager"></mapping>
        
         
 
