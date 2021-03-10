@@ -14,7 +14,7 @@ public class EmployeeDaoTests {
     @Order(1)
     void create_employee_test_1()
     {
-        Employee e1 = new Employee(0,"Sergio","Busquet");
+        Employee e1 = new Employee(0,"Sergio","Busquet","sergio","busquet");
         Employee registeredEmployee = employeeDAO.createEmployee(e1);
 
         testEmployee=registeredEmployee;

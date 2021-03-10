@@ -72,6 +72,7 @@ public class ExpenseDaoHibernateImpl implements ExpenseDAO{
             return expenses;
         }
 
+
     }
 
     @Override

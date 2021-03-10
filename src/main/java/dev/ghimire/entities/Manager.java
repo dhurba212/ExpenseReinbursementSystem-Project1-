@@ -18,6 +18,10 @@ public class Manager {
 
     @Column(name = "last_name")
     String lastName;
+    @Column(name = "username")
+    String username;
+    @Column(name = "password")
+    String password;
 
     @OneToMany(mappedBy = "managerId",fetch = FetchType.LAZY,cascade = CascadeType.ALL)
     Set<Expense> expenses = new HashSet<>();
@@ -26,10 +30,18 @@ public class Manager {
 
     }
 
-    public Manager(int managerId, String firstName, String lastName) {
+    public Manager(int managerId,String username,String password)
+    {
+        this.username = username;
+        this.password = password;
+    }
+
+    public Manager(int managerId, String firstName, String lastName,String username,String password) {
         this.managerId = managerId;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.username = username;
+        this.password = password;
     }
 
     public int getManagerId() {
@@ -62,6 +74,22 @@ public class Manager {
 
     public void setExpenses(Set<Expense> expenses) {
         this.expenses = expenses;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Override

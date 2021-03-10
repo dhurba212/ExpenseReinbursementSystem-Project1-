@@ -11,7 +11,7 @@ public class ConnectionUtil {
         Connection conn = null;
 
         try {
-            conn = DriverManager.getConnection("jdbc:postgresql://35.193.167.131:5432/expenseReimbursementSystemDB","......","......");
+            conn = DriverManager.getConnection("jdbc:postgresql://35.193.167.131:5432/expenseReimbursementSystemDB","......",".....");
 
         } catch (SQLException e) {
             e.printStackTrace();

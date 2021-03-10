@@ -48,6 +48,11 @@ public class Expense {
     public Expense(){
 
     }
+    public Expense(int expenseId,String status)
+    {
+        this.expenseId=expenseId;
+        this.status=status;
+    }
 
     public Expense(int expenseId, double amount, String reason, int employeeId) {
         this.expenseId = expenseId;
