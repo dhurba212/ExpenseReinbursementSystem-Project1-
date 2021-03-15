@@ -8,7 +8,7 @@ import com.auth0.jwt.interfaces.DecodedJWT;
 
 public class JwtUtil {
 
-    private static final String secret = "expenseReimbursementSecret";
+    private static final String secret = "";
     private static final Algorithm algorithm = Algorithm.HMAC256(secret);
     public static String generateToken(String role,String username, int id)
     {

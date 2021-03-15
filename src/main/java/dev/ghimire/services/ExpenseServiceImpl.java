@@ -3,6 +3,8 @@ package dev.ghimire.services;
 import dev.ghimire.daos.ExpenseDAO;
 import dev.ghimire.entities.Employee;
 import dev.ghimire.entities.Expense;
+import dev.ghimire.exception.MoneyOutOfBoundException;
+import dev.ghimire.exception.ReasonNotSpecifiedException;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -21,6 +23,14 @@ public class ExpenseServiceImpl implements ExpenseService{
 
     @Override
     public Expense registerExpense(Expense expense) {
+        if(expense.getAmount()<0)
+        {
+            throw new MoneyOutOfBoundException();
+        }
+        if(expense.getReason()==null ||expense.getReason().isEmpty())
+        {
+            throw new ReasonNotSpecifiedException();
+        }
         Expense createdExpense = expenseDAO.createExpense(expense);
         return createdExpense;
 
@@ -56,6 +66,10 @@ public class ExpenseServiceImpl implements ExpenseService{
 
     @Override
     public Expense updateExpense(Expense expense) {
+        if(expense.getAmount()<0)
+        {
+            throw new MoneyOutOfBoundException();
+        }
         Expense updatedExpense = expenseDAO.updateExpense(expense);
 
         return updatedExpense;

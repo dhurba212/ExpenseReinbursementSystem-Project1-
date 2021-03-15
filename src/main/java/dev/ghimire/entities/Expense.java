@@ -48,10 +48,11 @@ public class Expense {
     public Expense(){
 
     }
-    public Expense(int expenseId,String status)
+    public Expense(int expenseId,String status,int amount)
     {
         this.expenseId=expenseId;
         this.status=status;
+        this.amount=amount;
     }
 
     public Expense(int expenseId, double amount, String reason, int employeeId) {

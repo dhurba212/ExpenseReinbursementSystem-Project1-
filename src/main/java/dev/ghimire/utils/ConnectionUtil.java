@@ -11,7 +11,7 @@ public class ConnectionUtil {
         Connection conn = null;
 
         try {
-            conn = DriverManager.getConnection("jdbc:postgresql://35.193.167.131:5432/expenseReimbursementSystemDB","......",".....");
+            conn = DriverManager.getConnection(System.getenv("REIM_SYS_HIB_URL"),System.getenv("GCP_USER"),System.getenv("REIM_SYS_HIB_PASS"));
 
         } catch (SQLException e) {
             e.printStackTrace();

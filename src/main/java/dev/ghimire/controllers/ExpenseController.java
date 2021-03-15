@@ -9,9 +9,7 @@ import dev.ghimire.daos.ManagerDaoHibernateImpl;
 import dev.ghimire.entities.Employee;
 import dev.ghimire.entities.Expense;
 import dev.ghimire.entities.Manager;
-import dev.ghimire.exception.NotAnEmployeeException;
-import dev.ghimire.exception.NotAuthorizedException;
-import dev.ghimire.exception.NotAuthorizedToCreateExpenseForOtherEmployee;
+import dev.ghimire.exception.*;
 import dev.ghimire.services.*;
 import dev.ghimire.utils.JwtUtil;
 import io.javalin.http.Handler;
@@ -105,6 +103,18 @@ public class ExpenseController {
         {
             logger.error("Not a valid JWT");
             ctx.result("Invalid JWT");
+            ctx.status(403);
+        }
+        catch(MoneyOutOfBoundException e)
+        {
+            logger.error("Invalid Amount");
+            ctx.result("Invalid amount");
+            ctx.status(403);
+        }
+        catch(ReasonNotSpecifiedException e)
+        {
+            logger.error("Reason Not Provided while creating an expense");
+            ctx.result("Reason Not Provided");
             ctx.status(403);
         }
 
@@ -215,29 +225,41 @@ public class ExpenseController {
                 int id = Integer.parseInt(ctx.pathParam("id"));
                 //expense sent by user to update
                 Expense expenseFromUser = gson.fromJson(ctx.body(), Expense.class);
-                int expenseId = expenseFromUser.getExpenseId();
-                //expense pulled from database
-                Expense expenseFromDb = expenseService.getExpenseById(expenseId);
+                if(expenseFromUser.getStatus().equals("approved") || expenseFromUser.getStatus().equals("denied") || expenseFromUser.getStatus().equals("pending"))
+                {
 
-                if (expenseFromDb != null) {
+                    int expenseId = expenseFromUser.getExpenseId();
+                    //expense pulled from database
+                    Expense expenseFromDb = expenseService.getExpenseById(expenseId);
 
-                    //changing 3 fields in expenses pulled from database for the expense id sent by user and
-                    //made changes to decisionDate, status and managerId
-                    //doing so doesn't allow user to change anything else beside 3 required fields.
-                    expenseFromDb.setDecisionDate(System.currentTimeMillis());
-                    expenseFromDb.setStatus(expenseFromUser.getStatus());
-                    expenseFromDb.setManagerId(jwtId);
+                    if (expenseFromDb != null) {
 
-                    //finally putting back the expenseFromDb with 3 changes back to database
-                    Expense updatedExpense = expenseService.updateExpense(expenseFromDb);
+                        //changing 3 fields in expenses pulled from database for the expense id sent by user and
+                        //made changes to decisionDate, status and managerId
+                        //doing so doesn't allow user to change anything else beside 3 required fields.
+                        expenseFromDb.setDecisionDate(System.currentTimeMillis());
+                        expenseFromDb.setStatus(expenseFromUser.getStatus());
+                        expenseFromDb.setManagerId(jwtId);
+                        expenseFromDb.setAmount(expenseFromUser.getAmount());
 
-                    String updatedExpenseJson = gson.toJson(updatedExpense);
-                    ctx.result(updatedExpenseJson);
-                    ctx.status(200);
-                } else {
-                    ctx.result("Expense with expense id " + expenseId + " doesn't exist");
-                    ctx.status(200);
+                        //finally putting back the expenseFromDb with 3 changes back to database
+                        Expense updatedExpense = expenseService.updateExpense(expenseFromDb);
+
+                        String updatedExpenseJson = gson.toJson(updatedExpense);
+                        ctx.result(updatedExpenseJson);
+                        ctx.status(200);
+                    } else {
+                        ctx.result("Expense with expense id " + expenseId + " doesn't exist");
+                        ctx.status(200);
+                    }
                 }
+                else
+                {
+                    System.out.println(expenseFromUser.getStatus());
+                    System.out.println(!expenseFromUser.getStatus().equals("denied"));
+                    throw new StatusOutOfBoundException();
+                }
+
 
         }
         catch(NotAuthorizedException e)
@@ -252,6 +274,19 @@ public class ExpenseController {
             ctx.result("Invalid JWT");
             ctx.status(403);
         }
+        catch(StatusOutOfBoundException e)
+        {
+            logger.error("Status should be approved, denied or pending only");
+            ctx.result("Invalid Status");
+            ctx.status(203);
+        }
+        catch(MoneyOutOfBoundException e)
+        {
+            logger.error("Amount cannot be Negative");
+            ctx.result("Invalid Amount");
+            ctx.status(203);
+        }
+
 
 
         };
