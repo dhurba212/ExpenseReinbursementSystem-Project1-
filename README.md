@@ -5,8 +5,33 @@ Employees can submit new expenses,the expense amount as well as the note about t
 The Manager page will display the list of all the expenses submitted by all the employees and their status. Manager can approve, deny and also update the amount of the expense submitted by the employee. Manager can sort the expense table by the status of the expense, id of the expense and by date submitted. They will be able to see the total amount and percentage of the expense approved, denied and pending.
 
 Technologies Used
-IntelliJ IDE
+Java
 PostgreSQL
 GCP Virtual Machine
 Hibernate
+Gradle build tool
+HTML
+CSS
+JS
 
+Features
+login
+Create and submit expenses
+Update and delete expense 
+Sort expenses
+logout
+logging
+Authenticating users using JWT
+
+Testing
+The project follows TDD.
+All the DAOs and Services are tested using Junit and Mockito where applicable.
+All the endpoints are tested using postman.
+
+
+To-do List
+signup page to register new employees and managers
+pop-up message confirming if managers would like to goahead with updates
+
+License
+This project uses the following license: MIT license
