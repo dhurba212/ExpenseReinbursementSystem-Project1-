@@ -9,10 +9,10 @@ public class JwtTest {
     @Test
     void create_jwt_test_1()
     {
-        JwtUtil jwtUtil = new JwtUtil();
-        String token = jwtUtil.generateToken("manager","dhurba",1);
-        System.out.println(token);
-        Assertions.assertNotNull(token);
+//        JwtUtil jwtUtil = new JwtUtil();
+//        String token = jwtUtil.generateToken("manager","dhurba",1);
+//        System.out.println(token);
+//        Assertions.assertNotNull(token);
 
     }
 }

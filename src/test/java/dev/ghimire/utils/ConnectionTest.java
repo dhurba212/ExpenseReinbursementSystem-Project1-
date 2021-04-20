@@ -12,8 +12,8 @@ public class ConnectionTest {
 
     @Test
     void connection_test_1(){
-        Connection conn = ConnectionUtil.getConnection();
-        System.out.println(conn);
-        Assertions.assertNotNull(conn);
-    }
+//        Connection conn = ConnectionUtil.getConnection();
+//        System.out.println(conn);
+//        Assertions.assertNotNull(conn);
+   }
 }
